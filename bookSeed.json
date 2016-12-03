@@ -1,0 +1,32 @@
+{
+	"users": {
+		"user0": {
+			"uid": "",
+			"username": "a"
+		},
+		"user1": {
+			"uid": "",
+			"username": "b"
+		}
+	},
+	"books": {
+		"book0": {
+			"title": "A Wrinkle In Time",
+			"author": "Madeleine L’Engle",
+			"genre": "fantasy",
+			"isbn": "978-0-374-38613-9", 
+			"worth": "keep forever", 
+			"loanedOut": false,
+			"notes": "One of the books that encouraged me to read"
+		},
+		"book1": {
+			"title": "Demons Don't Dream",
+			"author": "Piers Anthony",
+			"genre": "fantasy",
+			"isbn": "0-8125-3483-2",
+			"worth": "keep forever", 
+			"loanedOut": false,
+			"notes": "One of the books that encouraged me to read"
+		}
+	}
+}
