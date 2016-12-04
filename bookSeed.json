@@ -9,7 +9,7 @@
 			"username": "b"
 		}
 	},
-	"books": {
+	"bookcase": {
 		"book0": {
 			"title": "A Wrinkle In Time",
 			"author": "Madeleine L’Engle",
@@ -17,16 +17,16 @@
 			"isbn": "978-0-374-38613-9", 
 			"worth": "keep forever", 
 			"loanedOut": false,
-			"notes": "One of the books that encouraged me to read"
+			"notes": "One of the books that propelled my love for reading"
 		},
 		"book1": {
-			"title": "Demons Don't Dream",
+			"title": "The Source of Magic",
 			"author": "Piers Anthony",
 			"genre": "fantasy",
-			"isbn": "0-8125-3483-2",
+			"isbn": "0-345-35058-8",
 			"worth": "keep forever", 
 			"loanedOut": false,
-			"notes": "One of the books that encouraged me to read"
+			"notes": "One of the books that propelled my love for reading"
 		}
 	}
 }
