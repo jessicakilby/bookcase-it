@@ -1,5 +1,8 @@
 .DS_Store
 lib/node_modules/
 lib/bower_components/
-javascripts/contactConstants.js
+javascripts/BookcaseConstants.js
+sass/components
+fonts
+js
 public
