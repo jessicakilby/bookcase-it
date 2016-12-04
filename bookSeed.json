@@ -1,0 +1,32 @@
+{
+	"users": {
+		"user0": {
+			"uid": "",
+			"username": "a"
+		},
+		"user1": {
+			"uid": "",
+			"username": "b"
+		}
+	},
+	"bookcase": {
+		"book0": {
+			"title": "A Wrinkle In Time",
+			"author": "Madeleine L’Engle",
+			"genre": "fantasy",
+			"isbn": "978-0-374-38613-9", 
+			"worth": "keep forever", 
+			"loanedOut": false,
+			"notes": "One of the books that propelled my love for reading"
+		},
+		"book1": {
+			"title": "The Source of Magic",
+			"author": "Piers Anthony",
+			"genre": "fantasy",
+			"isbn": "0-345-35058-8",
+			"worth": "keep forever", 
+			"loanedOut": false,
+			"notes": "One of the books that propelled my love for reading"
+		}
+	}
+}

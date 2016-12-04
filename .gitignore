@@ -1,0 +1,5 @@
+.DS_Store
+lib/node_modules/
+lib/bower_components/
+javascripts/contactConstants.js
+public
