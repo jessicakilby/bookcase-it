@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookcase It!</title>
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/main.css">
+</head>
+
+<body ng-app="BookcaseItApp">
+
+	<div ng-include="'./partials/navbar.html'"></div>
+
+	<div class="">
+		<div class="" ng-view></div>
+	</div>
+
+	<script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script> 
+	<script src="/lib/bower_components/jquery/dist/jquery.min.js"></script> 
+	<script src="/lib/bower_components/bootstrap/dist/js/bootstrap.min.js"></script> 
+	<script src="/lib/bower_components/angular/angular.min.js"></script> 
+	<script src="/lib/bower_components/angular-route/angular-route.min.js"></script>
+
+	 <script src="/javascripts/bookcase.js"></script>
+	<script src="/javascripts/BookConstants.js"></script>
+	<script src="/javascripts/BookConfig.js"></script>
+
+	<script src="/javascripts/factories/AuthFactory.js"></script>
+	<script src="/javascripts/factories/BookFactory.js"></script>
+	<script src="/javascripts/factories/UserFactory.js"></script>
+
+	<script src="/javascripts/controllers/AuthCtrl.js"></script>
+	<script src="/javascripts/controllers/NavbarCtrl.js"></script>
+	<script src="/javascripts/controllers/BookcaseCtrl.js"></script>
+	<script src="/javascripts/controllers/AddBookCtrl.js"></script>
+	<script src="/javascripts/controllers/EditPrevCtrl.js"></script>
+	<script src="/javascripts/controllers/BookEditCtrl.js"></script>
+
+</body>
+</html>
