@@ -1,11 +1,11 @@
 {
 	"users": {
 		"user0": {
-			"uid": "",
+			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2",
 			"username": "a"
 		},
 		"user1": {
-			"uid": "",
+			"uid": "BfZSmDuudMUoBEqfmAoR7dKVsEh1",
 			"username": "b"
 		}
 	},
@@ -17,7 +17,8 @@
 			"isbn": "978-0-374-38613-9", 
 			"worth": "keep forever", 
 			"loanedOut": false,
-			"notes": "One of the books that propelled my love for reading"
+			"notes": "One of the books that propelled my love for reading",
+			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2"
 		},
 		"book1": {
 			"title": "The Source of Magic",
@@ -26,7 +27,8 @@
 			"isbn": "0-345-35058-8",
 			"worth": "keep forever", 
 			"loanedOut": false,
-			"notes": "One of the books that propelled my love for reading"
+			"notes": "One of the books that propelled my love for reading",
+			"uid": "BfZSmDuudMUoBEqfmAoR7dKVsEh1"
 		}
 	}
 }

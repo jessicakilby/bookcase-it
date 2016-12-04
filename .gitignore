@@ -2,4 +2,7 @@
 lib/node_modules/
 lib/bower_components/
 javascripts/BookcaseConstants.js
+sass/components
+fonts
+js
 public

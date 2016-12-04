@@ -19,7 +19,7 @@ bookcase.factory("UserFactory", function($q, $http, FIREBASE_CONFIG){
 
 	let getUserFromFB = function(userId){
 		return $q((resolve, reject)=>{
-			$http.get(`${FIREBASE_CONFIG.databaseURL}users.json?orderBy="uid"$equalTo="${userId}"`)
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/users.json?orderBy="uid"&equalTo="${userId}"`)
 			.success(function(responseFromGet){
 				let users = [];
 				Object.keys(responseFromGet).forEach(function(key){
