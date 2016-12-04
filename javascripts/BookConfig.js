@@ -31,7 +31,27 @@ bookcase.config(function($routeProvider){
 		})
 		.when("/bookcase/home", {
 			templateUrl: "partials/bookcase-home.html",
-			controller: "ContactListCtrl",
+			controller: "BookcaseCtrl",
+			resolve: {isAuth}
+		})
+		.when("/bookcase/add", {
+			templateUrl: "partials/add-book.html",
+			controller: "AddBookCtrl",
+			resolve: {isAuth}
+		})
+		.when("/bookcase/editPrev/:id", {
+			templateUrl: "partials/edit-prev.html",
+			controller: "EditPrevCtrl",
+			resolve: {isAuth}
+		})
+		.when("/bookcase/edit/:id", {
+			templateUrl: "partials/add-book.html",
+			controller: "BookEditCtrl",
+			resolve: {isAuth}
+		})
+		.when("/logout", {
+			templateUrl: "partials/auth.html",
+			controller: "AuthCtrl",
 			resolve: {isAuth}
 		})
 		.otherwise("/auth");
