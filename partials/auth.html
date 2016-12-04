@@ -1,1 +1,56 @@
-<h1>Sign-In or Register as a new user</h1>
+
+<div class="row">
+	<h1>Sign-In or Register as a New User</h1>
+	<a class="waves-effect waves-light btn" ng-click="showSignInDiv()">Sign-In</a>
+	<a class="waves-effect waves-light btn" ng-click="showRegistrationDiv()">Register</a>
+</div>
+
+<div class="row" ng-show="showSignIn">
+	<form class="col s12">
+
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="email" type="email" class="validate" ng-model="signIn.email" required autofocus>
+				<label for="email" data-error="wrong" data-success="right">Email</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="password" type="password" class="validate" ng-model="signIn.password" required>
+				<label for="password">Password</label>
+			</div>
+		</div>
+		<button class="btn waves-effect waves-light" id="subBtn" type="submit" name="action" ng-click="signInUser(signIn)">Submit
+			<i class="material-icons right">send</i>
+		</button>
+
+	</form>
+</div>
+
+<div class="row" ng-show="showRegistration">
+	<form class="col s12">
+
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="email" type="email" class="validate" ng-model="register.email" required autofocus>
+				<label for="email" data-error="wrong" data-success="right">Email</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="password" type="password" class="validate" ng-model="register.password" required>
+				<label for="password">Password</label>
+			</div>
+		</div>
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="username" type="username" class="validate" ng-model="register.username" required>
+				<label for="username">Username</label>
+			</div>
+		</div>
+		<button class="btn waves-effect waves-light" id="subBtn" type="submit" name="action" ng-click="registerUser(register)">Submit
+			<i class="material-icons right">send</i>
+		</button>
+
+	</form>
+</div>
