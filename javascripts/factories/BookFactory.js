@@ -51,9 +51,46 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 		});
 	};
 
+	let deleteBook = function(bookId){
+		return $q((resolve, reject)=>{
+			$http.delete(`${FIREBASE_CONFIG.databaseURL}/bookcase/${bookId}.json`)
+			.success(function(deleteResponse){
+				resolve(deleteResponse);
+			}).error(function(deleteError){
+				reject(deleteError);
+			});
+		});
+	};
+
+	let editBook = function(editBookId){
+		return $q((resolve, reject)=>{
+			$http.put(`${FIREBASE_CONFIG.databaseURL}/items/${editBookId.id}.json`, JSON.stringify({
+				title: editBookId.title,
+				author: editBookId.author,
+				genre: editBookId.genre,
+				isbn: editBookId.isbn,
+				worth: editBookId.worth,
+				loanedOut: editBookId.loanedOut,
+				notes: editBookId.notes,
+				uid: editBookId.uid
+				})
+			)
+			.success(function(editBookResponse){
+				resolve(editBookResponse);
+			})
+			.error(function(editBookError){
+				reject(editBookError);
+			});
+		});
+	};
+
+
+
 	return{
 		getBookFB:getBookFB,
 		postBookFB:postBookFB,
-		getSingleBook:getSingleBook
+		getSingleBook:getSingleBook,
+		deleteBook:deleteBook,
+		editBook:editBook
 	};
 });
