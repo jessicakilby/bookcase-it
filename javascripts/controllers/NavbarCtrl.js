@@ -9,11 +9,11 @@ bookcase.controller("NavbarCtrl", function($scope, $rootScope){
 	},
 	{
 		name:"Add Book",
-		url: "#/pins/add"
+		url: "#/bookcase/add"
 	},
 	{
 		name:"Bookcase",
-		url:"#/pins/home"
+		url:"#/bookcase/home"
 	}
 	];
 });
