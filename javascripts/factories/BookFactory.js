@@ -64,7 +64,7 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 
 	let editBookFB = function(editBookId){
 		return $q((resolve, reject)=>{
-			$http.put(`${FIREBASE_CONFIG.databaseURL}/items/${editBookId.id}.json`, JSON.stringify({
+			$http.put(`${FIREBASE_CONFIG.databaseURL}/bookcase/${editBookId.id}.json`, JSON.stringify({
 				title: editBookId.title,
 				author: editBookId.author,
 				genre: editBookId.genre,
