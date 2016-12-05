@@ -1,12 +1,26 @@
 
-<div class="navbar-fixed">
+<nav class="navbar navbar-default" ng-controller="NavbarCtrl">
+	<div class="navbar-header">
+		<a href="#" class="navbar-brand">Bookcase It!</a>
+	</div>
+
+	<div class="right-links">
+		<div class="collapse navbar-collapse">
+			<ul class="nav navbar-nav navbar-right" ng-repeat="navLink in navTitles">
+				<li><a href="{{navLink.url}}">{{navLink.name}}</a></li>
+			</ul>
+		</div>
+	</div>
+</nav>
+
+<!-- trying to use materialize
+<div class="navbar-fixed" ng-controller="NavBarCtrl">
     <nav>
 	     <div class="nav-wrapper">
-	        <a href="#!" class="brand-logo">Logo</a>
-	        <ul class="right hide-on-med-and-down">
-	            <li><a href="sass.html">Sass</a></li>
-	            <li><a href="badges.html">Components</a></li>
+	        <a href="#!" class="brand-logo">Bookcase It!</a>
+	        <ul class="right hide-on-med-and-down" ng-repeat="title in navTitles" ng-show="user">
+	            <li><a href="{{title.url}}">{{title.name}}</a></li>
 	        </ul>
 	     </div>
     </nav>
-</div>
+</div> -->
