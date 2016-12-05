@@ -1,4 +1,32 @@
-<!-- 
+
+
+<div class="col-sm-6 col-sm-offset-3">
+	<div class="row">
+		<a class="waves-effect waves-light btn" ng-click="showSignInDiv()">Sign-In</a>
+		<a class="waves-effect waves-light btn" ng-click="showRegistrationDiv()">Register</a>
+	</div>
+	<div class="row">
+		<form class="signIn-container" ng-show="showSignIn">
+			<h4>Sign-In as an Existing User</h4>
+			<input class="form-control" placeholder="Email Address" type="email" ng-model="signIn.email" required autofocus>
+			<input class="form-control" placeholder="Password" type="password" ng-model="signIn.password" required>
+			<button class="btn waves-effect waves-light btn-flat" id="subBtn" type="submit" name="action" ng-click="signInUser(signIn)">Submit
+			    <!-- <i class="material-icons right">send</i> -->
+			</button>
+		</form>
+		<form class="register-container" ng-show="showRegistration">
+			<h4>Register as a New User</h4>
+			<input class="form-control" placeholder="Email Address" type="email" ng-model="register.email" required autofocus>
+			<input class="form-control" placeholder="Password" type="password" ng-model="register.password" required>
+			<input class="form-control" placeholder="Username" type="username" ng-model="register.username" required>
+			<button class="btn waves-effect waves-light btn-flat" type="submit" name="action" ng-click="registerUser(register)">Submit
+			    <!-- <i class="material-icons right">send</i> -->
+			</button>
+		</form>
+	</div>
+</div>
+
+<!-- Trying to use materialize
 <div class="row">
 	<h1>Sign-In or Register as a New User</h1>
 	<a class="waves-effect waves-light btn" ng-click="showSignInDiv()">Sign-In</a>
@@ -43,29 +71,3 @@
 		<a class="waves-effect waves-teal btn-flat" ng-click="registerUser(register)">Submit</a>
 	</form>
 </div> -->
-
-<div class="col-sm-6 col-sm-offset-3">
-	<div class="row">
-		<a class="waves-effect waves-light btn" ng-click="showSignInDiv()">Sign-In</a>
-		<a class="waves-effect waves-light btn" ng-click="showRegistrationDiv()">Register</a>
-	</div>
-	<div class="row">
-		<form class="signIn-container" ng-show="showSignIn">
-			<h4>Sign-In as an Existing User</h4>
-			<input class="form-control" placeholder="Email Address" type="email" ng-model="signIn.email" required autofocus>
-			<input class="form-control" placeholder="Password" type="password" ng-model="signIn.password" required>
-			<button class="btn waves-effect waves-light" id="subBtn" type="submit" name="action" ng-click="signInUser(signIn)">Submit
-			    <i class="material-icons right">send</i>
-			</button>
-		</form>
-		<form class="register-container" ng-show="showRegistration">
-			<h4>Register as a New User</h4>
-			<input class="form-control" placeholder="Email Address" type="email" ng-model="register.email" required autofocus>
-			<input class="form-control" placeholder="Password" type="password" ng-model="register.password" required>
-			<input class="form-control" placeholder="Username" type="username" ng-model="register.username" required>
-			<button class="btn waves-effect waves-light" type="submit" name="action" ng-click="registerUser(register)">Submit
-			    <i class="material-icons right">send</i>
-			</button>
-		</form>
-	</div>
-</div>
