@@ -14,14 +14,18 @@
 <h3>In My Bookcase</h3>
 <div class="container">
 	<div class="contact_container" ng-repeat="book in bookcase | filter: searchText | filter:{loanedOut:false}" >
-		<div class="title">{{book.title}}</div>
-		<div class="author">{{book.author}}</div>
-		<div class="genre">{{book.genre}}</div>
+		<h4 class="title">{{book.title}}</h4>
+		<h4 class="author">{{book.author}}</h4>
+		<div class="genre">Genre: {{book.genre}}</div>
 		<div class="isbn">{{book.isbn}}</div>
-		<div class="worth">{{book.worth}}</div>
-			<input type="checkbox" ng-model="book.loanedOut" ng-change="inputChange(book)">
-			<label>Loaned Out?</label>
-		<div class="notes">{{book.notes}}</div>
+		<div class="worth">Worth: {{book.worth}}</div>
+		<div class="input-group">
+		    <span class="input-group-addon">
+		        <input type="checkbox" aria-label="..." ng-model="book.loanedOut" ng-change="loanedOutChbx(book)">
+		    </span>
+			<p>  Loaned Out?</p>
+		</div>	
+		<div class="notes">Notes: {{book.notes}}</div>
 		<div class="editDeleteButton">
 			<button class="edit btn btn-warning" ng-click="editbook(book.id)"><i class="material-icons">edit</i></button>
 			<button class="delete btn btn-danger" ng-click="deleteBook(book.id)"><i class="material-icons">delete</i></button>
@@ -32,14 +36,14 @@
 <h3>Loaned Out Books</h3>
 <div class="container">
 	<div class="contact_container" ng-repeat="book in bookcase | filter: searchText | filter:{loanedOut:true}" >
-		<div class="title">{{book.title}}</div>
-		<div class="author">{{book.author}}</div>
-		<div class="genre">{{book.genre}}</div>
+		<h4 class="title">{{book.title}}</h4>
+		<h4 class="author">{{book.author}}</h4>
+		<div class="genre">Genre: {{book.genre}}</div>
 		<div class="isbn">{{book.isbn}}</div>
-		<div class="worth">{{book.worth}}</div>
-			<input type="checkbox" ng-model="book.loanedOut" ng-change="inputChange(book)">
+		<div class="worth">Worth: {{book.worth}}</div>
+			<input type="checkbox" ng-model="book.loanedOut" ng-change="loanedOutChbx(book)">
 			<label>Loaned Out?</label>
-		<div class="notes">{{book.notes}}</div>
+		<div class="notes">Notes: {{book.notes}}</div>
 		<div class="editDeleteButton">
 			<button class="edit btn btn-warning" ng-click="editbook(book.id)"><i class="material-icons">edit</i></button>
 			<button class="delete btn btn-danger" ng-click="deletebook(book.id)"><i class="material-icons">delete</i></button>

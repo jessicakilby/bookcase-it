@@ -51,7 +51,7 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 		});
 	};
 
-	let deleteBook = function(bookId){
+	let deleteBookFB = function(bookId){
 		return $q((resolve, reject)=>{
 			$http.delete(`${FIREBASE_CONFIG.databaseURL}/bookcase/${bookId}.json`)
 			.success(function(deleteResponse){
@@ -62,7 +62,7 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 		});
 	};
 
-	let editBook = function(editBookId){
+	let editBookFB = function(editBookId){
 		return $q((resolve, reject)=>{
 			$http.put(`${FIREBASE_CONFIG.databaseURL}/items/${editBookId.id}.json`, JSON.stringify({
 				title: editBookId.title,
@@ -90,7 +90,7 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 		getBookFB:getBookFB,
 		postBookFB:postBookFB,
 		getSingleBook:getSingleBook,
-		deleteBook:deleteBook,
-		editBook:editBook
+		deleteBookFB:deleteBookFB,
+		editBookFB:editBookFB
 	};
 });

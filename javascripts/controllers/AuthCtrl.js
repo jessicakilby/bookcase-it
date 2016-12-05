@@ -4,6 +4,11 @@ bookcase.controller("AuthCtrl", function($scope, $location, $rootScope, AuthFact
 
 	$scope.showSignIn = true; //ng-show="showSignIn" in auth.html
 	$scope.showRegistration = false; //ng-show"showRegistration" in auth.html
+	$scope.signIn = {
+		email: "a@a.com",
+		password:"123456"
+	};
+
 	if($location.path()==="/logout"){
 		AuthFactory.logout(); //if click logout, log user out
 		$rootScope.user = {}; //clear out user info
