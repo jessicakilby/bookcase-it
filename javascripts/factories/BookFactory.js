@@ -39,4 +39,21 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 		});
 	};
 
+	let getSingleBook = function(bookId){
+		return $q((resolve, reject)=>{
+			$http.get(`${FIREBASE_CONFIG.databaseURL}/bookcase/${bookId}.json`)
+			.success(function(getSingleBookResponse){
+				resolve(getSingleBookResponse);
+			})
+			.error(function(singelBookError){
+				reject(singelBookError);
+			});
+		});
+	};
+
+	return{
+		getBookFB:getBookFB,
+		postBookFB:postBookFB,
+		getSingleBook:getSingleBook
+	};
 });
