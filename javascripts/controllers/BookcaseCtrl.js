@@ -1,3 +1,6 @@
 "use strict";
 
-console.log("hey");
+bookcase.controller("BookcaseCtrl", function($scope, $rootScope, bookFactory){
+
+	
+});

@@ -1,3 +1,6 @@
 "use strict";
 
-console.log("hey");
+bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
+
+
+});
