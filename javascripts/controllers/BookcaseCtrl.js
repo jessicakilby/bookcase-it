@@ -21,10 +21,4 @@ bookcase.controller("BookcaseCtrl", function($scope, $rootScope, BookFactory){
 		});
 	};
 
-	$scope.loanedOutChbx = function(checkbox){
-		console.log("checkbox clicked");
-		BookFactory.editBookFB(checkbox)
-		.then(function(response){});
-	};
-
 });

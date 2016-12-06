@@ -3,3 +3,11 @@ body {
 
 .contact_container {
   border: 1px solid black; }
+
+img {
+  width: 300px;
+  height: 300px; }
+
+.revealCardInfo span,
+.bookTitle {
+  font-weight: bold; }
