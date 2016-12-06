@@ -1,32 +1,17 @@
 <h2>Bookcase</h2>
 
-<div class="row">
-	<div class="col-xs-6 col-xs-offset-3">
-		<div class="input-group">
-			<span class="input-group-btn">
-				<button class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
-			</span>
-			<input type="text" class="form-control" placeholder="Search for ..." ng-model="searchText">
-		</div>
-	</div>
-</div>
 
-
-<!-- <div class="container">
-	<div class="contact_container" ng-repeat="book in bookcase | filter: searchText">
-		<h4 class="title">{{book.title}}</h4>
-		<h4 class="author">{{book.author}}</h4>
-		<div class="genre">Genre: {{book.genre}}</div>
-		<div class="isbn">{{book.isbn}}</div>
-		<div class="worth">Worth: {{book.worth}}</div>
-		<div class="loanedOut">Loaned Out: {{book.loanedOut}}</div>	
-		<div class="notes">Notes: {{book.notes}}</div>
-		<div class="editDeleteButton">
-			<button class="edit btn btn-warning white"><a ng-href="#/bookcase/editPrev/{{book.id}}"><i class="material-icons">edit</i></a></button>
-			<button class="delete btn btn-danger" ng-click="deleteBook(book.id)"><i class="material-icons">delete</i></button>
-		</div>
+<nav>
+	<div class="nav-wrapper teal">
+		<form>
+			<div class="input-field">
+				<input id="search" type="search" placeholder="Search for ..." ng-model="searchText" required>
+				<label for="search"><i class="material-icons">search</i></label>
+				<i class="material-icons">close</i>
+			</div>
+		</form>
 	</div>
-</div> -->
+</nav>
 
 <div class="row" ng-repeat="book in bookcase | filter: searchText">
 	<div class="col s12 m7">
@@ -36,7 +21,7 @@
 				<span class="card-title"><h4>{{book.title}}<h4></span>
 			</div>
 			<div class="card-content">
-				<span class="card-title activator grey-text text-darken-4"><p>{{book.title}}</p><p>{{book.author}}</p>><i class="material-icons right">more_vert</i></span>
+				<span class="card-title activator grey-text text-darken-4">{{book.author}}<i class="material-icons right">more_vert</i></span>
 			</div>
 			<div class="card-reveal">
 				<span class="card-title grey-text text-darken-4">{{book.title}}<i class="material-icons right">close</i></span>
@@ -48,8 +33,7 @@
 				<div class="revealCardInfo"><span>Notes: </span>{{book.notes}}</div>
 			</div>
 			<div class="card-action">
-				<!-- <a href="#">This is a link</a> -->
-				<button class="edit btn btn-warning white"><a ng-href="#/bookcase/editPrev/{{book.id}}"><i class="material-icons">edit</i></a></button>
+				<a ng-href="#/bookcase/editPrev/{{book.id}}"><button class="edit btn btn-warning"><i class="material-icons">edit</i></button></a>
 				<button class="delete btn btn-danger" ng-click="deleteBook(book.id)"><i class="material-icons">delete</i></button>
 			</div>
 		</div>

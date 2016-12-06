@@ -5,7 +5,6 @@ bookcase.controller("AddBookCtrl", function($scope, $rootScope, $location, BookF
 	$scope.newBook = {};
 
 	$scope.submitNewBook = function(){
-		$scope.newBook.loanedOut = false;
 		$scope.newBook.uid = $rootScope.user.uid;
 		BookFactory.postBookFB($scope.newBook)
 		.then(function(bookId){
