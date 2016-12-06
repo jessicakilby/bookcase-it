@@ -1,4 +1,4 @@
-<h2>Bookcase</h2>
+<h3 class="HomeTitle">Bookcase</h3>
 
 <nav>
 	<div class="nav-wrapper teal">
@@ -31,7 +31,7 @@
 				<div class="revealCardInfo"><span>Loaned Out?: </span>{{book.loanedOut}}</div>	
 				<div class="revealCardInfo"><span>Notes: </span>{{book.notes}}</div>
 			</div>
-			<div class="card-action">
+			<div class="card-action button-background">
 				<a ng-href="#/bookcase/editPrev/{{book.id}}"><button class="edit btn btn-warning"><i class="material-icons">edit</i></button></a>
 				<button class="delete btn btn-danger" ng-click="deleteBook(book.id)"><i class="material-icons">delete</i></button>
 			</div>

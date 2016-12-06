@@ -1,5 +1,14 @@
 body {
-  background: lightblue; }
+  background: #ffd180; }
+
+.HomeTitle {
+  font-family: 'Pacifico', cursive; }
+
+nav {
+  padding-left: 20px; }
+
+.card .card-action .button-background {
+  background-color: #ffcdd2; }
 
 .contact_container {
   border: 1px solid black; }
