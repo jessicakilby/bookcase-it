@@ -40,8 +40,7 @@ bookcase.controller("AuthCtrl", function($scope, $location, $rootScope, AuthFact
 		signUserIn(signInUser);
 	};
 	$scope.registerUser = function(registerNewUser){
-		AuthFactory.registerWithEmail(registerNewUser)
-		.then(function(success){
+		AuthFactory.registerWithEmail(registerNewUser).then(function(success){
 			registerNewUser.uid = success.uid;
 			return UserFactory.postUserToFB(registerNewUser);
 		})

@@ -10,18 +10,11 @@
 	<div><span class="editSpan">Loaned Out: </span>{{selectedBook.loanedOut}}</div>
 	<div><span class="editSpan">Notes: </span>{{selectedBook.notes}}</div>
 	
-		<a ng-href="#/bookcase/edit/{{selectedBook.id}}"><button class="btn btn-success">Edit</button></a>
-	
-	
-		<a ng-href="#/bookcase/home"><button class="btn btn-info">Go Back to Bookcase</button></a>
+	<a ng-href="#/bookcase/edit/{{selectedBook.id}}">
+		<button class="btn btn-success">Edit</button>
+	</a>
+	<a ng-href="#/bookcase/home">
+		<button class="btn btn-info">Go Back to Bookcase</button>
+	</a>
 	
 </div>
-
-<!-- title: newBook.title,
-author: newBook.author,
-genre: newBook.genre,
-isbn: newBook.isbn,
-worth: newBook.worth,
-loanedOut: newBook.loanedOut,
-notes: newBook.notes,
-uid: newBook.uid -->

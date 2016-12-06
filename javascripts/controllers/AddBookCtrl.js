@@ -6,8 +6,7 @@ bookcase.controller("AddBookCtrl", function($scope, $rootScope, $location, BookF
 
 	$scope.submitNewBook = function(){
 		$scope.newBook.uid = $rootScope.user.uid;
-		BookFactory.postBookFB($scope.newBook)
-		.then(function(bookId){
+		BookFactory.postBookFB($scope.newBook).then(function(bookId){
 			$location.url("/bookcase/home");
 			$scope.newBook = {};
 		});

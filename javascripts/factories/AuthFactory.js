@@ -16,8 +16,7 @@ bookcase.factory("AuthFactory", function($q, $http, $rootScope, FIREBASE_CONFIG)
 		return $q((resolve, reject)=>{
 			firebase.auth().signInWithEmailAndPassword(
 				credentials.email,
-				credentials.password)
-			.then((authenticateData)=>{
+				credentials.password).then((authenticateData)=>{
 				resolve(authenticateData);
 			}).catch((errorAuthData)=>{
 				reject(errorAuthData);
@@ -29,8 +28,7 @@ bookcase.factory("AuthFactory", function($q, $http, $rootScope, FIREBASE_CONFIG)
 		return $q((resolve, reject)=>{
 			firebase.auth().createUserWithEmailAndPassword(
 				user.email,
-				user.password)
-			.then((authenticateData)=>{
+				user.password).then((authenticateData)=>{
 					resolve(authenticateData);
 			}).catch((errorAuthData)=>{
 				reject(errorAuthData);

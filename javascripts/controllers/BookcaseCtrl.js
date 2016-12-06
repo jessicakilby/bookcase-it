@@ -15,8 +15,7 @@ bookcase.controller("BookcaseCtrl", function($scope, $rootScope, BookFactory){
 
 	$scope.deleteBook = function(bookId){
 		console.log("delete book", bookId);
-		BookFactory.deleteBookFB(bookId)
-		.then(function(response){
+		BookFactory.deleteBookFB(bookId).then(function(response){
 			getBooks();
 		});
 	};

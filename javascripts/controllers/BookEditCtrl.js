@@ -5,15 +5,13 @@ bookcase.controller("BookEditCtrl", function($scope, $routeParams, $location, Bo
 	$scope.newBook = {};
 	let bookId = $routeParams.id;
 
-	BookFactory.getSingleBook(bookId)
-	.then(function(singleBook){
+	BookFactory.getSingleBook(bookId).then(function(singleBook){
 		singleBook.id = bookId;
 		$scope.newBook = singleBook;
 	});
 
 	$scope.submitNewBook = function(){
-		BookFactory.editBookFB($scope.newBook)
-		.then(function(response){
+		BookFactory.editBookFB($scope.newBook).then(function(response){
 			$scope.newBook = {};
 			$location.url("/bookcase/home");
 		});
