@@ -1,1 +1,44 @@
+
 <h1>Add a Book to Bookcase</h1>
+
+<form class="form-container">
+	<h3>Add Book</h3>
+	<div class="form-group">
+		<label>Title</label>
+		<input class="form-control" type="text" id="title" placeholder="Title" ng-model="newBook.title">
+	</div>
+	<div class="form-group">
+		<label>Author</label>
+		<input class="form-control" type="text" id="author" placeholder="Author" ng-model="newBook.author">
+	</div>
+	<div class="form-group">
+		<label>Genre</label>
+		<input class="form-control" type="text" id="Genre" placeholder="Genre" ng-model="newBook.genre">
+	</div>
+	<div class="form-group">
+		<label>ISBN</label>
+		<input class="form-control" type="text" id="isbn" placeholder="ISBN" ng-model="newBook.isbn">
+	</div>
+	<div class="form-group">
+		<label>Worth</label>
+		<input class="form-control" type="text" id="worth" placeholder="Worth" ng-model="newBook.worth">
+	</div>
+	<!-- <div class="form-group">
+		<label>Loaned Out to Who?</label>
+		<input class="form-control" type="text" id="loanedOut" placeholder="Loaned Out to Who?" ng-model="newBook.loanedOut">
+	</div> -->
+	<div class="form-group">
+		<label>Notes</label>
+		<input class="form-control" type="text" id="notes" placeholder="Notes" ng-model="newBook.notes">
+	</div>
+	<button type="submit" class="btn btn-success" id="submit-contact" ng-click="submitNewBook()">Submit New Book</button>
+</form>
+
+<!-- title: newBook.title,
+author: newBook.author,
+genre: newBook.genre,
+isbn: newBook.isbn,
+worth: newBook.worth,
+loanedOut: newBook.loanedOut,
+notes: newBook.notes,
+uid: newBook.uid -->

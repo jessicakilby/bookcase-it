@@ -27,7 +27,7 @@
 		</div>	
 		<div class="notes">Notes: {{book.notes}}</div>
 		<div class="editDeleteButton">
-			<button class="edit btn btn-warning" ng-click="editbook(book.id)"><i class="material-icons">edit</i></button>
+			<button class="edit btn btn-warning"><a ng-href="#/bookcase/editPrev/{{book.id}}"><i class="material-icons">edit</i></a></button>
 			<button class="delete btn btn-danger" ng-click="deleteBook(book.id)"><i class="material-icons">delete</i></button>
 		</div>
 	</div>
@@ -45,8 +45,8 @@
 			<label>Loaned Out?</label>
 		<div class="notes">Notes: {{book.notes}}</div>
 		<div class="editDeleteButton">
-			<button class="edit btn btn-warning" ng-click="editbook(book.id)"><i class="material-icons">edit</i></button>
-			<button class="delete btn btn-danger" ng-click="deletebook(book.id)"><i class="material-icons">delete</i></button>
+			<button class="edit btn btn-warning" ng-click="editBook(book.id)"><i class="material-icons">edit</i></button>
+			<button class="delete btn btn-danger" ng-click="deleteBook(book.id)"><i class="material-icons">delete</i></button>
 		</div>
 	</div>
 </div>
