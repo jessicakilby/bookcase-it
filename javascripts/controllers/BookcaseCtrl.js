@@ -1,9 +1,9 @@
 "use strict";
 
-bookcase.controller("BookcaseCtrl", function($scope, $rootScope, BookFactory){
+bookcase.controller("BookcaseCtrl", function($scope, $rootScope, $location, $routeParams, BookFactory){
 
 	$scope.bookcase = [];
-
+	
 	let getBooks = function(){
 		BookFactory.getBookFB($rootScope.user.uid)
 		.then(function(booksFromFB){
@@ -20,6 +20,12 @@ bookcase.controller("BookcaseCtrl", function($scope, $rootScope, BookFactory){
 			getBooks();
 		});
 	};
+
+	// $scope.editBook = function(bookId){
+	// 	console.log("editBook here");
+
+	// 	$location.url("/bookcase/editPrev/{{bookId}}");
+	// };
 
 	$scope.loanedOutChbx = function(checkbox){
 		console.log("checkbox clicked");
