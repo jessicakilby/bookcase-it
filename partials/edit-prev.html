@@ -1,27 +1,20 @@
 
-<h1>Preview book information before editing</h1>
+<h3>Preview book information before editing</h3>
 
-<div class="">
-	<h3>Title: {{selectedBook.title}}</h3>
-	<h3>Author: {{selectedBook.author}}</h3>
-	<h3>Genre: {{selectedBook.genre}}</h3>
-	<h3>ISBN: {{selectedBook.isbn}}</h3>
-	<h3>Worth: {{selectedBook.worth}}</h3>
-	<h3>loanedOut: {{selectedBook.loanedOut}}</h3>
-	<h3>Notes: {{selectedBook.notes}}</h3>
-	<button class="btn btn-success">
-		<a ng-href="#/bookcase/edit/{{selectedBook.id}}">Edit</a>
-	</button>
-	<button class="btn btn-info">
-		<a ng-href="#/bookcase/home">Go Back to Bookcase</a>
-	</button>
+<div class="container">
+	<div><span class="editSpan">Title: </span>{{selectedBook.title}}</div>
+	<div><span class="editSpan">Author: </span>{{selectedBook.author}}</div>
+	<div><span class="editSpan">Genre: </span>{{selectedBook.genre}}</div>
+	<div><span class="editSpan">ISBN: </span>{{selectedBook.isbn}}</div>
+	<div><span class="editSpan">Worth: </span>{{selectedBook.worth}}</div>
+	<div><span class="editSpan">Loaned Out: </span>{{selectedBook.loanedOut}}</div>
+	<div><span class="editSpan">Notes: </span>{{selectedBook.notes}}</div>
+	
+	<a ng-href="#/bookcase/edit/{{selectedBook.id}}">
+		<button class="btn btn-success">Edit</button>
+	</a>
+	<a ng-href="#/bookcase/home">
+		<button class="btn btn-info">Go Back to Bookcase</button>
+	</a>
+	
 </div>
-
-<!-- title: newBook.title,
-author: newBook.author,
-genre: newBook.genre,
-isbn: newBook.isbn,
-worth: newBook.worth,
-loanedOut: newBook.loanedOut,
-notes: newBook.notes,
-uid: newBook.uid -->
