@@ -1,6 +1,6 @@
 "use strict";
 
-bookcase.controller("BookcaseCtrl", function($scope, $rootScope, $location, $routeParams, BookFactory){
+bookcase.controller("BookcaseCtrl", function($scope, $rootScope, BookFactory){
 
 	$scope.bookcase = [];
 	
@@ -20,12 +20,6 @@ bookcase.controller("BookcaseCtrl", function($scope, $rootScope, $location, $rou
 			getBooks();
 		});
 	};
-
-	// $scope.editBook = function(bookId){
-	// 	console.log("editBook here");
-
-	// 	$location.url("/bookcase/editPrev/{{bookId}}");
-	// };
 
 	$scope.loanedOutChbx = function(checkbox){
 		console.log("checkbox clicked");
