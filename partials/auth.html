@@ -1,26 +1,28 @@
 
 <div class="row">
-	<h3>Please Sign-In or Register as a New User</h3>
+	<h5 class="HomeTitle">Please Sign-In or Register as a New User</h5>
 	<a class="waves-effect waves-light btn" ng-click="showSignInDiv()">Sign-In</a>
 	<a class="waves-effect waves-light btn" ng-click="showRegistrationDiv()">Register</a>
 </div>
 
 <div class="row">
+
 	<form class="col s12" ng-show="showSignIn">
 		<div class="row">
 			<div class="input-field col s9">
-				<input placeholder="Email" id="email" type="email" class="validate" ng-model="signIn.email" required autofocus>
+				<input id="email" type="email" class="validate" ng-model="signIn.email" required autofocus>
 				<label for="email" data-error="wrong" data-success="right">Email</label>
 			</div>
 		</div>
 		<div class="row">
 			<div class="input-field col s9">
-				<input placeholder="Password" id="password" type="password" class="validate" ng-model="signIn.password" required>
+				<input id="password" type="password" class="validate" ng-model="signIn.password" required>
 				<label for="password">Password</label>
 			</div>
 		</div>
 		<a class="waves-effect waves-teal btn-flat" ng-click="signInUser(signIn)">Submit</a>
 	</form>
+
 	<form class="col s12" ng-show="showRegistration">
 		<div class="row">
 			<div class="input-field col s9">
@@ -42,4 +44,5 @@
 	    </div>
 		<a class="waves-effect waves-teal btn-flat" ng-click="registerUser(register)">Submit</a>
 	</form>
+	
 </div>

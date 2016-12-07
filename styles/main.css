@@ -5,10 +5,8 @@ body {
   font-family: 'Pacifico', cursive; }
 
 nav {
-  padding-left: 20px; }
-
-.card .card-action .button-background {
-  background-color: #ffcdd2; }
+  padding-left: 20px;
+  background-color: teal; }
 
 .contact_container {
   border: 1px solid black; }

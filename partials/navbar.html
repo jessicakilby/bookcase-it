@@ -2,7 +2,7 @@
 <nav ng-controller="NavbarCtrl">
 	<div class="nav-wrapper teal">
 	<a href="#" class="brand-logo HomeTitle">Bookcase It!</a>
-		<ul id="nav-mobile" class="right hide-on-med-and-down" ng-repeat="navLink in navTitles">
+		<ul id="nav-mobile" class="right hide-on-med-and-down" ng-repeat="navLink in navTitles" ng-show="user">
 			<li><a href="{{navLink.url}}">{{navLink.name}}</a></li>
 		</ul>
 	</div>

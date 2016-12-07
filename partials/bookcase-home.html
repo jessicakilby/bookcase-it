@@ -1,5 +1,5 @@
+<!-- <div class="container"> -->
 <h3 class="HomeTitle">Bookcase</h3>
-
 <nav>
 	<div class="nav-wrapper teal">
 		<form>
@@ -12,9 +12,9 @@
 	</div>
 </nav>
 
-<div class="row" ng-repeat="book in bookcase | filter: searchText">
-	<div class="col s12 m7">
-		<div class="card medium" >
+<div class="row">
+	<div class="col s12 m6 l4" ng-repeat="book in bookcase | filter: searchText">
+		<div class="card medium">
 			<div class="card-image">
 				<img class="activator" src="images/book.jpg">
 				<span class="card-title"><h4>{{book.title}}<h4></span>
@@ -38,5 +38,5 @@
 		</div>
 	</div>
 </div>
-
+<!-- </div> -->
 
