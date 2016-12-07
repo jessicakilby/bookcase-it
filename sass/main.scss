@@ -11,9 +11,10 @@ nav {
 	background-color: teal;
 }
 
-// .card .card-action .button-background {
-// 	background-color: #ffcdd2;
-// }
+.loanOut {
+	display: inline;
+	color: #808080;
+}
 
 .contact_container{
 	border: 1px solid black;
@@ -26,7 +27,8 @@ img {
 
 .revealCardInfo span,
 .bookTitle,
-.editSpan 
+.editSpan,
+.imageTitle
 {
 	font-weight: bold;
 }

@@ -8,6 +8,10 @@ nav {
   padding-left: 20px;
   background-color: teal; }
 
+.loanOut {
+  display: inline;
+  color: #808080; }
+
 .contact_container {
   border: 1px solid black; }
 
@@ -17,5 +21,6 @@ img {
 
 .revealCardInfo span,
 .bookTitle,
-.editSpan {
+.editSpan,
+.imageTitle {
   font-weight: bold; }

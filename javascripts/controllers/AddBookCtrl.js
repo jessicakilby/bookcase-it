@@ -11,4 +11,5 @@ bookcase.controller("AddBookCtrl", function($scope, $rootScope, $location, BookF
 			$scope.newBook = {};
 		});
 	};
+	
 });	

@@ -13,31 +13,45 @@
 		"book0": {
 			"title": "A Wrinkle In Time",
 			"author": "Madeleine L’Engle",
-			"genre": "fantasy",
+			"genre": "Fantasy",
 			"isbn": "978-0-374-38613-9", 
 			"worth": "keep forever", 
 			"loanedOut": "No",
-			"notes": "One of the books that propelled my love for reading",
+			"toWho": "",
+			"notes": "Childhood fav.",
 			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2"
 		},
 		"book1": {
 			"title": "The Source of Magic",
 			"author": "Piers Anthony",
-			"genre": "fantasy",
+			"genre": "Fantasy",
 			"isbn": "0-345-35058-8",
 			"worth": "keep forever", 
 			"loanedOut": "No",
-			"notes": "One of the books that propelled my love for reading",
+			"toWho": "",
+			"notes": "Childhood fav.",
 			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2"
 		},
 		"book2": {
 			"title": "Dragon on a Pedestal",
 			"author": "Piers Anthony",
-			"genre": "fantasy",
+			"genre": "Fantasy",
 			"isbn": "0-345-34936-9",
 			"worth": "keep forever", 
 			"loanedOut": "No",
-			"notes": "One of the books that propelled my love for reading",
+			"toWho": "",
+			"notes": "Childhood fav.",
+			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2"
+		},
+		"book3": {
+			"title": "The Incredible Journey",
+			"author": "Sheila Burnford",
+			"genre": "Action and Adventure",
+			"isbn": "978-0440226703",
+			"worth": "will keep forever", 
+			"loanedOut": "No",
+			"toWho": "",
+			"notes": "Need to get this one",
 			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2"
 		}
 	}
