@@ -1,4 +1,4 @@
-<!-- <div class="container"> -->
+
 <h3 class="HomeTitle">Bookcase</h3>
 <nav>
 	<div class="nav-wrapper teal">
@@ -16,7 +16,7 @@
 	<div class="col s12 m6 l4" ng-repeat="book in bookcase | filter: searchText">
 		<div class="card medium">
 			<div class="card-image">
-				<img class="activator" src="images/book.jpg">
+				<img class="activator cardImage" src="images/book.jpg">
 				<span class="card-title"><h5 class="imageTitle">{{book.title}}<h5></span>
 			</div>
 			<div class="card-content">
@@ -32,12 +32,12 @@
 				<div class="revealCardInfo"><span>To Who?: </span>{{book.toWho}}</div>
 				<div class="revealCardInfo"><span>Notes: </span>{{book.notes}}</div>
 			</div>
-			<div class="card-action button-background">
-				<a ng-href="#/bookcase/editPrev/{{book.id}}"><button class="edit btn btn-warning"><i class="material-icons">edit</i></button></a>
-				<button class="delete btn btn-danger" ng-click="deleteBook(book.id)"><i class="material-icons">delete</i></button>
+			<div class="card-action teal">
+				<a ng-href="#/bookcase/editPrev/{{book.id}}"><button class="edit btn btn-warning teal darken-2"><i class="material-icons">edit</i></button></a>
+				<button class="delete btn btn-danger teal darken-2" ng-click="deleteBook(book.id)"><i class="material-icons">delete</i></button>
 			</div>
 		</div>
 	</div>
 </div>
-<!-- </div> -->
+
 

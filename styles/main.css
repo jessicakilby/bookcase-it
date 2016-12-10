@@ -1,5 +1,5 @@
 body {
-  background: #ffd180; }
+  background: #ffb74d; }
 
 .HomeTitle {
   font-family: 'Pacifico', cursive; }
@@ -9,13 +9,12 @@ nav {
   background-color: teal; }
 
 .loanOut {
-  display: inline;
-  color: #808080; }
+  display: inline; }
 
 .contact_container {
   border: 1px solid black; }
 
-img {
+.cardImage {
   width: 300px;
   height: 300px; }
 

@@ -1,0 +1,39 @@
+<!--Search for your book here-->
+<h3 class="HomeTitle">Search for a Book to Add</h3>
+<div class="row">
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="search" type="text" ng-model="inputForSearch" required>
+				<label for="search">Search for Book...</label>
+			</div>
+		</div>
+		<button type="submit" class="btn btn-success" id="search-book" ng-click="submitSearch()">Search</button>
+	</form>
+</div>		
+
+<!--Results from Search-->
+<div class="row">
+	<div class="col s12 m6 l4" ng-repeat="books in searchResults">
+		<div class="card medium">
+			<div class="card-image">
+				<img class="activator cardImage" src="{{books.volumeInfo.imageLinks.thumbnail}}">
+				<span class="card-title"><h5 class="imageTitle">{{books.volumeInfo.title}}<h5></span>
+			</div>
+			<div class="card-content">
+				<span class="card-title activator grey-text text-darken-4">{{books.volumeInfo.authors[0]}}<i class="material-icons right">more_vert</i></span>
+			</div>
+			<div class="card-reveal">
+				<span class="card-title grey-text text-darken-4">{{books.volumeInfo.title}}<i class="material-icons right">close</i></span>
+				<div class="revealCardInfo"><span>Author: </span>{{books.volumeInfo.authors[0]}}</div>
+				<div class="revealCardInfo"><span>Genre: </span>{{books.volumeInfo.categories[0]}}</div>
+				<div class="revealCardInfo"><span>ISBN: </span>{{books.volumeInfo.industryIdentifiers[1].identifier}}</div>
+				<div class="revealCardInfo"><span>ISBN: </span>{{books.volumeInfo.description}}</div>
+			</div>
+			<div class="card-action teal">
+				<a ng-href="#/bookcase/editPrev/{{book.id}}"><button class="edit btn btn-warning teal darken-2">Add Book</button></a>
+			</div>
+		</div>
+	</div>
+</div>
+	
