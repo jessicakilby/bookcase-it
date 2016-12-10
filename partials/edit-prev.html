@@ -1,13 +1,14 @@
 
-<h3>Preview book information before editing</h3>
 
 <div class="container">
-	<div><span class="editSpan">Title: </span>{{selectedBook.title}}</div>
+	<h4 class="HomeTitle">Preview book information before editing</h4>
+	<h5><span class="editSpan">Title: </span>{{selectedBook.title}}</h5>
 	<div><span class="editSpan">Author: </span>{{selectedBook.author}}</div>
 	<div><span class="editSpan">Genre: </span>{{selectedBook.genre}}</div>
 	<div><span class="editSpan">ISBN: </span>{{selectedBook.isbn}}</div>
 	<div><span class="editSpan">Worth: </span>{{selectedBook.worth}}</div>
 	<div><span class="editSpan">Loaned Out: </span>{{selectedBook.loanedOut}}</div>
+	<div><span class="editSpan">To Who?: </span>{{selectedBook.toWho}}</div>
 	<div><span class="editSpan">Notes: </span>{{selectedBook.notes}}</div>
 	
 	<a ng-href="#/bookcase/edit/{{selectedBook.id}}">

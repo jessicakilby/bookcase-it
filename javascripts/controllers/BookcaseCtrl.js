@@ -7,7 +7,6 @@ bookcase.controller("BookcaseCtrl", function($scope, $rootScope, BookFactory){
 	let getBooks = function(){
 		BookFactory.getBookFB($rootScope.user.uid)
 		.then(function(booksFromFB){
-			console.log("books from fb", booksFromFB);
 			$scope.bookcase = booksFromFB;
 		});
 	};

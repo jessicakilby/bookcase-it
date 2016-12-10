@@ -8,6 +8,14 @@ bookcase.controller("NavbarCtrl", function($scope, $rootScope){
 		url: "#/logout"
 	},
 	{
+		name:"Search",
+		url:"#/bookcase/search"
+	},
+	{
+		name:"Wishlist",
+		url:"#/bookcase/wishlist"
+	},
+	{
 		name:"Add Book",
 		url: "#/bookcase/add"
 	},

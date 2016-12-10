@@ -49,6 +49,11 @@ bookcase.config(function($routeProvider){
 			controller: "BookEditCtrl",
 			resolve: {isAuth}
 		})
+		.when("/bookcase/search", {
+			templateUrl: "partials/searchAPI.html",
+			controller: "searchAPICtrl",
+			resolve: {isAuth}
+		})
 		.when("/logout", {
 			templateUrl: "partials/auth.html",
 			controller: "AuthCtrl",

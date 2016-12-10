@@ -1,37 +1,89 @@
+<h3 class="HomeTitle">Add Book to Bookcase</h3>
 
-<h1>Add a Book to Bookcase</h1>
+<div class="row">
+	<form class="col s12">
+		<div class="row">
+			<div class="input-field col s12">
+				<input id="title" type="text" ng-model="newBook.title">
+				<label for="title">Title</label>
+			</div>
+			<div class="input-field col s12">
+				<input id="author" type="text" ng-model="newBook.author">
+				<label for="author">Author</label>
+			</div>
+			<div class="input-field col s12">
+				<input id="genre" type="text" ng-model="newBook.genre">
+				<label for="genre">Genre</label>
+			</div>
+			<div class="input-field col s12">
+				<input id="isbn" type="text" ng-model="newBook.isbn">
+				<label for="isbn">ISBN</label>
+			</div>
+			<div class="input-field col s12">
+				<input id="worth" type="text" ng-model="newBook.worth">
+				<label for="worth">Worth</label>
+			</div>
 
-<form class="form-container">
-	<h3>Add Book</h3>
-	<div class="form-group">
-		<label>Title</label>
-		<input class="form-control" type="text" id="title" placeholder="Title" ng-model="newBook.title">
+			<div class="input-field col s4">
+				<form action="#">
+						<div class="loanOut grey-text">Loaned Out?</div>
+						<input name="group1" type="radio" id="no" value="No" ng-model="newBook.loanedOut" ng-change="radioChange(value)"/>
+						<label for="no">No</label>
+						<input name="group1" type="radio" id="yes" value="Yes" ng-model="newBook.loanedOut" ng-change="radioChange(value)"/>
+						<label for="yes">Yes</label>
+				</form>
+			</div>
+			<div class="input-field col s8">
+				<input id="toWho" type="text" ng-model="newBook.toWho">
+				<label for="toWho">To Who?</label>
+			</div>
+
+			<div class="input-field col s12">
+				<textarea id="notes" class="materialize-textarea" ng-model="newBook.notes"></textarea>
+				<label for="notes">Notes</label>
+			</div>
+
+		</div>
+			<button type="submit" class="btn btn-success" id="submit-contact" ng-click="submitNewBook()">Submit New Book</button>
+	</form>
+</div>
+
+<!-- <h3 class="HomeTitle">Search for a Book to Add</h3>
+<nav>
+	<div class="nav-wrapper teal">
+		<form>
+			<div class="input-field">
+				<input id="search" type="search" placeholder="Search for ..." ng-model="searchForBook" required>
+				<label for="search"><i class="material-icons">search</i></label>
+				<i class="material-icons">close</i>
+			</div>
+		</form>
 	</div>
-	<div class="form-group">
-		<label>Author</label>
-		<input class="form-control" type="text" id="author" placeholder="Author" ng-model="newBook.author">
-	</div>
-	<div class="form-group">
-		<label>Genre</label>
-		<input class="form-control" type="text" id="Genre" placeholder="Genre" ng-model="newBook.genre">
-	</div>
-	<div class="form-group">
-		<label>ISBN</label>
-		<input class="form-control" type="text" id="isbn" placeholder="ISBN" ng-model="newBook.isbn">
-	</div>
-	<div class="form-group">
-		<label>Worth</label>
-		<input class="form-control" type="text" id="worth" placeholder="Worth" ng-model="newBook.worth">
-	</div>
-	<div class="form-group">
-		<label>Loaned Out</label>
-		<input class="form-control" type="text" id="loanedOut" placeholder="Loaned Out" ng-model="newBook.loanedOut">
-	</div>
-	
-	<div class="form-group">
-		<label>Notes</label>
-		<input class="form-control" type="text" id="notes" placeholder="Notes" ng-model="newBook.notes">
-	</div>
-	<button type="submit" class="btn btn-success" id="submit-contact" ng-click="submitNewBook()">Submit New Book</button>
-</form>
+</nav> -->
+
+<!-- This is where the data will come back
+I want to be able to click th one I want -->
+<!-- <div class="row">
+	ng-reapeat="books in searchReturn" -->
+
+
+<!-- pull up a modal that will add it to add-book.html -->
+    <!-- Modal Trigger -->
+    <!-- <a class="waves-effect waves-light btn" href="#modal1">Modal</a> -->
+
+
+
+
+    <!-- Modal Structure -->
+    <!-- <div id="modal1" class="modal">
+    	<div class="modal-content">
+    		<h4>Modal Header</h4>
+    		<p>A bunch of text</p>
+    	</div>
+    	<div class="modal-footer">
+    		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+    	</div>
+    </div>
+
+</div> -->
 

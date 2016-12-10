@@ -1,14 +1,25 @@
 body {
-  background: lightblue; }
+  background: #ffb74d; }
+
+.HomeTitle {
+  font-family: 'Pacifico', cursive; }
+
+nav {
+  padding-left: 20px;
+  background-color: teal; }
+
+.loanOut {
+  display: inline; }
 
 .contact_container {
   border: 1px solid black; }
 
-img {
+.cardImage {
   width: 300px;
   height: 300px; }
 
 .revealCardInfo span,
 .bookTitle,
-.editSpan {
+.editSpan,
+.imageTitle {
   font-weight: bold; }
