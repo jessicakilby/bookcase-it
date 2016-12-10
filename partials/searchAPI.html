@@ -14,7 +14,7 @@
 
 <!--Results from Search-->
 <div class="row">
-	<div class="col s12 m6 l4" ng-repeat="books in searchResults">
+	<div class="col s12 m6 l4" ng-repeat="books in searchResults" ng-click="bookSelection()">
 		<div class="card medium">
 			<div class="card-image">
 				<img class="activator cardImage" src="{{books.volumeInfo.imageLinks.thumbnail}}">

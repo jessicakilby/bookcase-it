@@ -2,10 +2,10 @@
 
 bookcase.controller("searchAPICtrl", function($scope, $rootScope, $location, BookFactory, ApiFactory){
 
-	$scope.newBook = {};
-	$scope.inputForSearch = {};
+	$scope.inputForSearch = '';
 	$scope.searchResults = [];
 	$scope.bookcase = [];
+	$scope.newBookSelection = {};
 
 	let uid = $rootScope.user.uid;
 
@@ -21,6 +21,11 @@ bookcase.controller("searchAPICtrl", function($scope, $rootScope, $location, Boo
 			console.log("bookReturnFromSearch", bookReturnFromSearch);
 			$scope.searchResults = bookReturnFromSearch;
 		});
+	};
+
+	$scope.bookSelection = function(bookId){
+		console.log("you chose a book");
+		$scope.newBookSelection.id = bookId;
 	};
 
 
