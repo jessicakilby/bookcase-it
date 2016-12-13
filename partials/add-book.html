@@ -3,21 +3,22 @@
 <div class="row">
 	<form class="col s12">
 		<div class="row">
+			<div class="display-image" ng-model="newBook.url">Book Image: {{bookChoice.image}}</div>
 			<div class="input-field col s12">
 				<input id="title" type="text" ng-model="newBook.title">
-				<label for="title">Title</label>
+				<label for="title">Title: {{bookChoice.title}}</label>
 			</div>
 			<div class="input-field col s12">
 				<input id="author" type="text" ng-model="newBook.author">
-				<label for="author">Author</label>
+				<label for="author">Author: {{bookChoice.author}}</label>
 			</div>
 			<div class="input-field col s12">
 				<input id="genre" type="text" ng-model="newBook.genre">
-				<label for="genre">Genre</label>
+				<label for="genre">Genre: {{bookChoice.genre}}</label>
 			</div>
 			<div class="input-field col s12">
 				<input id="isbn" type="text" ng-model="newBook.isbn">
-				<label for="isbn">ISBN</label>
+				<label for="isbn">ISBN: {{bookChoice.isbn}}</label>
 			</div>
 			<div class="input-field col s12">
 				<input id="worth" type="text" ng-model="newBook.worth">

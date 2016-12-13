@@ -34,7 +34,7 @@ bookcase.config(function($routeProvider){
 			controller: "BookcaseCtrl",
 			resolve: {isAuth}
 		})
-		.when("/bookcase/add", {
+		.when("/bookcase/add/:id", {
 			templateUrl: "partials/add-book.html",
 			controller: "AddBookCtrl",
 			resolve: {isAuth}
