@@ -23,10 +23,7 @@ bookcase.controller("searchAPICtrl", function($scope, $rootScope, $location, Boo
 		});
 	};
 
-	$scope.bookSelection = function(bookId){
-		console.log("you chose a book");
-		$scope.newBookSelection.id = bookId;
-	};
+	
 
 
 });
