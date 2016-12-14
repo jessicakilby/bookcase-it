@@ -21,15 +21,16 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 	let postBookFB = function(newBook){
 		return $q((resolve, reject)=>{
 			$http.post(`${FIREBASE_CONFIG.databaseURL}/bookcase.json`, JSON.stringify({
-				image: newBook.url,
+				image: newBook.image,
 				title: newBook.title,
 				author: newBook.author,
 				genre: newBook.genre,
 				isbn: newBook.isbn,
-				worth: newBook.worth,
+				description: newBook.description,
 				loanedOut: newBook.loanedOut,
 				toWho: newBook.toWho,
 				notes: newBook.notes,
+				googleId: newBook.id,
 				uid: newBook.uid
 			}))
 			.success(function(postBookResponse){
@@ -67,14 +68,16 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 	let editBookFB = function(editBookId){
 		return $q((resolve, reject)=>{
 			$http.put(`${FIREBASE_CONFIG.databaseURL}/bookcase/${editBookId.id}.json`, JSON.stringify({
-				image: editBookId.url,
+				image: editBookId.image,
 				title: editBookId.title,
 				author: editBookId.author,
 				genre: editBookId.genre,
 				isbn: editBookId.isbn,
-				worth: editBookId.worth,
+				description: editBookId.description,
+				loanedOut: editBookId.loanedOut,
 				toWho: editBookId.toWho,
 				notes: editBookId.notes,
+				googleId: editBookId.id,
 				uid: editBookId.uid
 				})
 			)

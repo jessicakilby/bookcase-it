@@ -15,10 +15,10 @@ bookcase.controller("NavbarCtrl", function($scope, $rootScope){
 		name:"Wishlist",
 		url:"#/bookcase/wishlist"
 	},
-	{
-		name:"Add Book",
-		url: "#/bookcase/add"
-	},
+	// {
+	// 	name:"Add Book",
+	// 	url: "#/bookcase/add"
+	// },
 	{
 		name:"Bookcase",
 		url:"#/bookcase/home"

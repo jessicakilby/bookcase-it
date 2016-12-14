@@ -3,28 +3,27 @@
 <div class="row">
 	<form class="col s12">
 		<div class="row">
-			<div class="display-image" ng-model="newBook.url">Book Image: {{bookChoice.image}}</div>
+			<img ng-src="{{newBook.image}}" alt="" class="image">
 			<div class="input-field col s12">
-				<input id="title" type="text" ng-model="newBook.title">
-				<label for="title">Title: {{bookChoice.title}}</label>
+				<p for="title">Title: {{newBook.title}}</p>
 			</div>
 			<div class="input-field col s12">
-				<input id="author" type="text" ng-model="newBook.author">
-				<label for="author">Author: {{bookChoice.author}}</label>
+				<p for="author">Author: {{newBook.author}}</p>
 			</div>
 			<div class="input-field col s12">
-				<input id="genre" type="text" ng-model="newBook.genre">
-				<label for="genre">Genre: {{bookChoice.genre}}</label>
+				<p for="genre">Genre: {{newBook.genre}}</p>
 			</div>
 			<div class="input-field col s12">
-				<input id="isbn" type="text" ng-model="newBook.isbn">
-				<label for="isbn">ISBN: {{bookChoice.isbn}}</label>
+				<p for="isbn">ISBN: {{newBook.isbn}}</p>
 			</div>
 			<div class="input-field col s12">
+				<p for="isbn">description: {{newBook.description}}</p>
+			</div>
+			<!-- <div class="input-field col s12">
 				<input id="worth" type="text" ng-model="newBook.worth">
 				<label for="worth">Worth</label>
-			</div>
-
+			</div> -->
+			<!--User puts input-->
 			<div class="input-field col s4">
 				<form action="#">
 						<div class="loanOut grey-text">Loaned Out?</div>
@@ -49,42 +48,4 @@
 	</form>
 </div>
 
-<!-- <h3 class="HomeTitle">Search for a Book to Add</h3>
-<nav>
-	<div class="nav-wrapper teal">
-		<form>
-			<div class="input-field">
-				<input id="search" type="search" placeholder="Search for ..." ng-model="searchForBook" required>
-				<label for="search"><i class="material-icons">search</i></label>
-				<i class="material-icons">close</i>
-			</div>
-		</form>
-	</div>
-</nav> -->
-
-<!-- This is where the data will come back
-I want to be able to click th one I want -->
-<!-- <div class="row">
-	ng-reapeat="books in searchReturn" -->
-
-
-<!-- pull up a modal that will add it to add-book.html -->
-    <!-- Modal Trigger -->
-    <!-- <a class="waves-effect waves-light btn" href="#modal1">Modal</a> -->
-
-
-
-
-    <!-- Modal Structure -->
-    <!-- <div id="modal1" class="modal">
-    	<div class="modal-content">
-    		<h4>Modal Header</h4>
-    		<p>A bunch of text</p>
-    	</div>
-    	<div class="modal-footer">
-    		<a href="#!" class=" modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-    	</div>
-    </div>
-
-</div> -->
 

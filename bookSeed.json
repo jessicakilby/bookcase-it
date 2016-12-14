@@ -13,45 +13,65 @@
 		"book0": {
 			"title": "A Wrinkle In Time",
 			"author": "Madeleine L’Engle",
-			"genre": "Fantasy",
-			"isbn": "978-0-374-38613-9", 
-			"worth": "keep forever", 
+			"image": "http://books.google.com/books/content?id=r119-dYq0mwC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+			"genre": "Juvenile Fiction",
+			"isbn": "9781429915649", 
+			"description": "Madeleine L'Engle's ground-breaking science fiction and fantasy classic, soon to be a major motion picture. It was a dark and stormy night; Meg Murry, her small brother Charles Wallace, and her mother had come down to the kitchen for a midnight snack when they were upset by the arrival of a most disturbing stranger. \"Wild nights are my glory,\" the unearthly stranger told them. \"I just got caught in a downdraft and blown off course. Let me sit down for a moment, and then I'll be on my way. Speaking of ways, by the way, there is such a thing as a tesseract.\" A tesseract (in case the reader doesn't know) is a wrinkle in time. To tell more would rob the reader of the enjoyment of Miss L'Engle's unusual book. A Wrinkle in Time, winner of the Newbery Medal in 1963, is the story of the adventures in space and time of Meg, Charles Wallace, and Calvin O'Keefe (athlete, student, and one of the most popular boys in high school). They are in search of Meg's father, a scientist who disappeared while engaged in secret work for the government on the tesseract problem. A Wrinkle in Time is the winner of the 1963 Newbery Medal. It is the first book in The Time Quintet, which consists of A Wrinkle in Time, A Wind in the Door, A Swiftly Tilting Planet, Many Waters, and An Acceptable Time. A Wrinkle in Time is soon to be a movie from Disney, directed by Ava DuVernay, starring Storm Reid, Oprah Winfrey, Reese Witherspoon and Mindy Kaling. This title has Common Core connections.", 
 			"loanedOut": "No",
 			"toWho": "",
 			"notes": "Childhood fav.",
-			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2"
+			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2",
+			"googleId": "r119-dYq0mwC"
 		},
 		"book1": {
-			"title": "The Source of Magic",
+			"title": "Source of Magic",
 			"author": "Piers Anthony",
-			"genre": "Fantasy",
+			"image": "http://books.google.com/books/content?id=MHL6EGqgHZkC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+			"genre": "Fiction",
 			"isbn": "0-345-35058-8",
-			"worth": "keep forever", 
+			"description": "Ordered by King Trent to determine the source of Xanth's magic, Bink and his companions were harried by an unseen enemy determined to thwart them. When even their protector turned against them, Blink still managed to reach his goal and carry out the King's orders...but the king did not expect Blink's next act--to destroy utterly the magic of Xanth! From the Paperback edition.", 
 			"loanedOut": "No",
 			"toWho": "",
 			"notes": "Childhood fav.",
+			"googleId": "",
 			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2"
 		},
 		"book2": {
 			"title": "Dragon on a Pedestal",
 			"author": "Piers Anthony",
-			"genre": "Fantasy",
-			"isbn": "0-345-34936-9",
-			"worth": "keep forever", 
+			"image": "http://books.google.com/books/content?id=nEhxkNzXYzIC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+			"genre": "Fiction",
+			"isbn": "0345454367",
+			"description": "There is trouble in Xanth again. The Gap Dragon had escaped and was ravaging across the land, the forget-spell was causing mass amnesia, three-year old Ivy was headed right for a hungry dragon. Could things get any worse? Probably.... From the Paperback edition.", 
 			"loanedOut": "No",
 			"toWho": "",
 			"notes": "Childhood fav.",
+			"googleId": "",
 			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2"
 		},
 		"book3": {
-			"title": "The Incredible Journey",
-			"author": "Sheila Burnford",
-			"genre": "Action and Adventure",
-			"isbn": "978-0440226703",
-			"worth": "will keep forever", 
+			"title": "Harry Potter and the Sorcerer's Stone",
+			"author": "J.K. Rowling",
+			"image": "http://books.google.com/books/content?id=wrOQLV6xB-wC&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+			"genre": "Juvenile Fiction",
+			"isbn": "1781100489",
+			"description": "\"Turning the envelope over, his hand trembling, Harry saw a purple wax seal bearing a coat of arms; a lion, an eagle, a badger and a snake surrounding a large letter 'H'.\" Harry Potter has never even heard of Hogwarts when the letters start dropping on the doormat at number four, Privet Drive. Addressed in green ink on yellowish parchment with a purple seal, they are swiftly confiscated by his grisly aunt and uncle. Then, on Harry's eleventh birthday, a great beetle-eyed giant of a man called Rubeus Hagrid bursts in with some astonishing news: Harry Potter is a wizard, and he has a place at Hogwarts School of Witchcraft and Wizardry. An incredible adventure is about to begin!", 
 			"loanedOut": "No",
 			"toWho": "",
-			"notes": "Need to get this one",
+			"notes": "Great kid's series that's fun for adults too.",
+			"googleId": "",
+			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2"
+		}
+	},
+	"wishlist": {
+		"book0": {
+			"title": "The Incredible Journey",
+			"author": "Sheila Burnford",
+			"image": "http://books.google.com/books/content?id=RbiaBgAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&source=gbs_api",
+			"genre": "Juvenile Fiction",
+			"isbn": "1443146196",
+			"description": "A classic Canadian story of the bravery and ingenuity of three animals who find their way home. First published in 1961, The Incredible Journey tells the story of three pets: a young Labrador retriever, an old bull terrier, and a Siamese cat. While their owners are away in England, they are being cared for by a family friend at his home in the country. But a miscommunication occurs between the friend and his housekeeper when he goes on a hunting trip, and the animals are left alone for a several hours, with a gnawing instinct that something has gone wrong. They soon set off on a journey to find home, which instinct tells them is to the west. They travel 400 kilometres across the Northern Ontario wilderness, facing many obstacles along the way: swift-flowing rivers and the rugged landscape; wild animals and unsympathetic humans; starvation, injuries and sheer exhaustion. Separately they would not have survived, but together this disparate group prevails, and they find their way home to the family they love.", 
+			"googleId": "",
 			"uid": "2b2KplokTCRGL1HJQkFU3yUJaVc2"
 		}
 	}
