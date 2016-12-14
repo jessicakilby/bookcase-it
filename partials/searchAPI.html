@@ -18,17 +18,17 @@
 		<div class="card medium">
 			<div class="card-image">
 				<img class="activator cardImage" src="{{bookChoice.volumeInfo.imageLinks.thumbnail}}">
-				<span class="card-title"><h5 class="imageTitle" ng-model="newBook.title">{{bookChoice.volumeInfo.title}}<h5></span>
+				<span class="card-title"><h5 class="imageTitle">{{bookChoice.volumeInfo.title}}<h5></span>
 			</div>
 			<div class="card-content">
 				<span class="card-title activator grey-text text-darken-4">{{bookChoice.volumeInfo.authors[0]}}<i class="material-icons right">more_vert</i></span>
 			</div>
 			<div class="card-reveal">
-				<span class="card-title grey-text text-darken-4">{{bookChoice.volumeInfo.title}}<i class="material-icons right">close</i></span>
-				<div class="revealCardInfo"><span>Author: </span>{{bookChoice.volumeInfo.authors[0]}}</div>
-				<div class="revealCardInfo"><span>Genre: </span>{{bookChoice.volumeInfo.categories[0]}}</div>
-				<div class="revealCardInfo"><span>ISBN: </span>{{bookChoice.volumeInfo.industryIdentifiers[1].identifier}}</div>
-				<div class="revealCardInfo"><span>ISBN: </span>{{bookChoice.volumeInfo.description}}</div>
+				<span class="card-title grey-text text-darken-4" ng-model="bookChoice.title">{{bookChoice.volumeInfo.title}}<i class="material-icons right">close</i></span>
+				<div class="revealCardInfo" ng-model="bookChoice.author"><span>Author: </span>{{bookChoice.volumeInfo.authors[0]}}</div>
+				<div class="revealCardInfo" ng-model="bookChoice.genre"><span>Genre: </span>{{bookChoice.volumeInfo.categories[0]}}</div>
+				<div class="revealCardInfo" ng-model="bookChoice.isbn"><span>ISBN: </span>{{bookChoice.volumeInfo.industryIdentifiers[1].identifier}}</div>
+				<div class="revealCardInfo"><span>Description: </span>{{bookChoice.volumeInfo.description}}</div>
 			</div>
 			<div class="card-action teal">
 				<a ng-href="#/bookcase/add/{{bookChoice.id}}"><button class="edit btn btn-warning teal darken-2">Add Book</button></a>
