@@ -1,6 +1,6 @@
 "use strict";
 
-bookcase.controller("AddBookCtrl", function($scope, $rootScope, $routeParams, $location, BookFactory, ApiFactory){
+bookcase.controller("WishlistCtrl", function($scope, $rootScope, $routeParams, $location, BookFactory, ApiFactory){
 
 	$scope.newBook = {};
 	$scope.bookChoice = {};

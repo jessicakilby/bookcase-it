@@ -54,6 +54,11 @@ bookcase.config(function($routeProvider){
 			controller: "searchAPICtrl",
 			resolve: {isAuth}
 		})
+		.when("/bookcase/wishlist", {
+			templateUrl: "partials/wishlist.html",
+			controller: "wishlistCtrl",
+			resolve: {isAuth}
+		})
 		.when("/logout", {
 			templateUrl: "partials/auth.html",
 			controller: "AuthCtrl",

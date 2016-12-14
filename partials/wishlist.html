@@ -1,5 +1,5 @@
 
-<h3 class="HomeTitle">Bookcase</h3>
+<h3 class="HomeTitle">Wishlist</h3>
 <nav>
 	<div class="nav-wrapper teal">
 		<form>
@@ -13,7 +13,7 @@
 </nav>
 
 <div class="row">
-	<div class="col s12 m6 l4" ng-repeat="book in bookcase | filter: searchText">
+	<div class="col s12 m6 l4" ng-repeat="book in wishlist | filter: searchText">
 		<div class="card medium">
 			<div class="card-image">
 				<img class="activator cardImage" ng-src="{{book.image}}">
@@ -28,12 +28,10 @@
 				<div class="revealCardInfo"><span>Genre: </span>{{book.genre}}</div>
 				<div class="revealCardInfo"><span>ISBN: </span>{{book.isbn}}</div>
 				<div class="revealCardInfo"><span>Description: </span>{{book.description}}</div>
-				<div class="revealCardInfo"><span>Loaned Out?: </span>{{book.loanedOut}}</div>
-				<div class="revealCardInfo"><span>To Who?: </span>{{book.toWho}}</div>
-				<div class="revealCardInfo"><span>Notes: </span>{{book.notes}}</div>
 			</div>
 			<div class="card-action teal">
-				<a ng-href="#/bookcase/editPrev/{{book.id}}"><button class="edit btn btn-warning teal darken-2"><i class="material-icons">edit</i></button></a>
+				<!-- <a ng-href="#/wishlist/editPrev/{{book.id}}"><button class="edit btn btn-warning teal darken-2"><i class="material-icons">edit</i></button></a> -->
+				<a ng-href="#/bookcase/add/{{book.id}}"><button class="edit btn btn-warning teal darken-2">Add Book</button></a>
 				<button class="delete btn btn-danger teal darken-2" ng-click="deleteBook(book.id)"><i class="material-icons">delete</i></button>
 			</div>
 		</div>

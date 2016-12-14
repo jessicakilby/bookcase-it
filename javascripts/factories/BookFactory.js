@@ -30,6 +30,7 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 				loanedOut: newBook.loanedOut,
 				toWho: newBook.toWho,
 				notes: newBook.notes,
+				googleId: newBook.id,
 				uid: newBook.uid
 			}))
 			.success(function(postBookResponse){
@@ -73,8 +74,10 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 				genre: editBookId.genre,
 				isbn: editBookId.isbn,
 				description: editBookId.description,
+				loanedOut: editBookId.loanedOut,
 				toWho: editBookId.toWho,
 				notes: editBookId.notes,
+				googleId: editBookId.id,
 				uid: editBookId.uid
 				})
 			)
