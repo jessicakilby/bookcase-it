@@ -17,6 +17,7 @@ bookcase.controller("AddBookCtrl", function($scope, $rootScope, $routeParams, $l
 			author: selectedBook.volumeInfo.authors[0],
 			genre: selectedBook.volumeInfo.categories[0],
 			isbn: selectedBook.volumeInfo.industryIdentifiers[1].identifier,
+			description: selectedBook.volumeInfo.description,
 			googleId: selectedBook.id,
 			uid: $rootScope.user.uid
 		};

@@ -16,8 +16,8 @@
 	<div class="col s12 m6 l4" ng-repeat="book in bookcase | filter: searchText">
 		<div class="card medium">
 			<div class="card-image">
-				<img class="activator cardImage" src="images/book.jpg">
-				<span class="card-title"><h5 class="imageTitle">{{book.title}}<h5></span>
+				<img class="activator cardImage" ng-src="{{book.image}}">
+				<span class="card-title"><h5 class="imageTitle teal darken-2">{{book.title}}<h5></span>
 			</div>
 			<div class="card-content">
 				<span class="card-title activator grey-text text-darken-4">{{book.author}}<i class="material-icons right">more_vert</i></span>
@@ -27,7 +27,7 @@
 				<div class="revealCardInfo"><span>Author: </span>{{book.author}}</div>
 				<div class="revealCardInfo"><span>Genre: </span>{{book.genre}}</div>
 				<div class="revealCardInfo"><span>ISBN: </span>{{book.isbn}}</div>
-				<div class="revealCardInfo"><span>Worth: </span>{{book.worth}}</div>
+				<div class="revealCardInfo"><span>Description: </span>{{book.description}}</div>
 				<div class="revealCardInfo"><span>Loaned Out?: </span>{{book.loanedOut}}</div>
 				<div class="revealCardInfo"><span>To Who?: </span>{{book.toWho}}</div>
 				<div class="revealCardInfo"><span>Notes: </span>{{book.notes}}</div>

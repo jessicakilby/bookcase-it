@@ -26,7 +26,7 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 				author: newBook.author,
 				genre: newBook.genre,
 				isbn: newBook.isbn,
-				worth: newBook.worth,
+				description: newBook.description,
 				loanedOut: newBook.loanedOut,
 				toWho: newBook.toWho,
 				notes: newBook.notes,
@@ -72,7 +72,7 @@ bookcase.factory("BookFactory", function($q, $http, FIREBASE_CONFIG){
 				author: editBookId.author,
 				genre: editBookId.genre,
 				isbn: editBookId.isbn,
-				worth: editBookId.worth,
+				description: editBookId.description,
 				toWho: editBookId.toWho,
 				notes: editBookId.notes,
 				uid: editBookId.uid
