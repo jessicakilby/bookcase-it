@@ -49,14 +49,14 @@ bookcase.config(function($routeProvider){
 			controller: "BookEditCtrl",
 			resolve: {isAuth}
 		})
+		.when("/bookcase/wishlist", {
+			templateUrl: "partials/wishlist.html",
+			controller: "WishlistCtrl",
+			resolve: {isAuth}
+		})
 		.when("/bookcase/search", {
 			templateUrl: "partials/searchAPI.html",
 			controller: "searchAPICtrl",
-			resolve: {isAuth}
-		})
-		.when("/bookcase/wishlist", {
-			templateUrl: "partials/wishlist.html",
-			controller: "wishlistCtrl",
 			resolve: {isAuth}
 		})
 		.when("/logout", {

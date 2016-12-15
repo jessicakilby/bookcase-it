@@ -31,6 +31,31 @@ bookcase.controller("AddBookCtrl", function($scope, $rootScope, $routeParams, $l
 			$scope.newBook = {};
 		});
 	};
+
+	// WishFactory.getSingleBookWish(BookWishId).then(function(singleBook){
+	// 	console.log("singleBook", singleBook.data.items[0]);
+	// 	let selectedBook = singleBook.data.items[0];
+	// 	$scope.newBookWish = {
+	// 		image: selectedBook.volumeInfo.imageLinks.thumbnail,
+	// 		title: selectedBook.volumeInfo.title,
+	// 		author: selectedBook.volumeInfo.authors[0],
+	// 		genre: selectedBook.volumeInfo.categories[0],
+	// 		isbn: selectedBook.volumeInfo.industryIdentifiers[1].identifier,
+	// 		description: selectedBook.volumeInfo.description,
+	// 		googleId: selectedBook.id,
+	// 		uid: $rootScope.user.uid
+	// 	};
+	// 	singleBook.id = BookWishId;
+	// 	$scope.bookWishChoice = singleBook;
+	// });
+
+	// $scope.submitNewBookWish = function(){
+	// 	// $scope.newBookWish.uid = $rootScope.user.uid;
+	// 	WishFactory.postWishlistFB($scope.newBookWish).then(function(bookId){
+	// 		$location.url("/bookcase/wishlist");
+	// 		$scope.newBookWish = {};
+	// 	});
+	// };
 	
 });	
 
