@@ -29,7 +29,7 @@
 				<div class="revealCardInfo" ng-model="bookChoice.genre"><span>Genre: </span>{{bookChoice.volumeInfo.categories[0]}}</div>
 				<div class="revealCardInfo" ng-model="bookChoice.isbn"><span>ISBN: </span>{{bookChoice.volumeInfo.industryIdentifiers[1].identifier}}</div>
 				<div class="revealCardInfo"><span>Description: </span>{{bookChoice.volumeInfo.description}}</div>
-				<div class="revealCardInfo"><span>googleId: </span>{{bookChoice.id}}</div>
+				<!-- <div class="revealCardInfo"><span>googleId: </span>{{bookChoice.id}}</div> -->
 			</div>
 			<div class="card-action teal">
 				<a ng-href="#/bookcase/add/{{bookChoice.id}}"><button class="edit btn btn-warning teal darken-2">Select Book</button></a>

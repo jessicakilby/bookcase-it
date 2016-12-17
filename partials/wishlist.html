@@ -30,7 +30,7 @@
 				<div class="revealCardInfo"><span>Description: </span>{{book.description}}</div>
 			</div>
 			<div class="card-action teal">
-				<a ng-href="#/bookcase/add/{{book.id}}"><button class="edit btn btn-warning teal darken-2">Bookcase</button></a>
+				<button class="edit btn btn-warning teal darken-2" ng-click="wishlistToBooklist(book)">Bookcase</button>
 				<button class="delete btn btn-danger teal darken-2" ng-click="deleteBookWish(book.id)"><i class="material-icons">delete</i></button>
 			</div>
 		</div>

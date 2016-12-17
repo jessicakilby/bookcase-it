@@ -18,6 +18,15 @@ bookcase.controller("WishlistCtrl", function($scope, $rootScope, $routeParams, $
 			getBookWishlist();
 		});
 	};
+
+	// $scope.wishlistToBooklist = function(book){
+	// 	BookFactory.add(book).then(function(fbBook){
+	// 		let bookId= fbBook;
+	// 		WishlistFactory.delete(book.id).then(function(){
+	// 			$location(`/bookcase/edit/${bookId}`)
+	// 		})
+	// 	})
+	// }
 	
 });	
 
