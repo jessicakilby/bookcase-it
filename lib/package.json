@@ -16,5 +16,8 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-sass": "^1.2.1",
     "matchdep": "^1.0.1"
+  },
+  "dependencies": {
+    "grunt-contrib-copy": "^1.0.0"
   }
 }
