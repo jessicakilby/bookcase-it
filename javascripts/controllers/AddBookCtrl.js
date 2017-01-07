@@ -32,36 +32,36 @@ bookcase.controller("AddBookCtrl", function($scope, $rootScope, $routeParams, $l
 		});
 	};
 
-	$scope.newBook = {};
-	$scope.bookWishChoice = {};
-	let BookWishId = $routeParams.id;
+// 	$scope.newBook = {};
+// 	$scope.bookWishChoice = {};
+// 	let BookWishId = $routeParams.id;
 
-	WishFactory.getSingleBookWish(BookWishId).then(function(singleBook){
-		console.log("WishFactory singleBook", singleBook);
-		let selectedBook = singleBook;
-		$scope.newBook = {
-			image: selectedBook.url,
-			title: selectedBook.title,
-			author: selectedBook.author,
-			genre: selectedBook.genre,
-			isbn: selectedBook.isbn,
-			description: selectedBook.description,
-			googleId: selectedBook.id,
-			uid: $rootScope.user.uid
-		};
-		singleBook.id = BookWishId;
-		$scope.bookWishChoice = singleBook;
-	});
+// 	WishFactory.getSingleBookWish(BookWishId).then(function(singleBook){
+// 		console.log("WishFactory singleBook", singleBook);
+// 		let selectedBook = singleBook;
+// 		$scope.newBook = {
+// 			image: selectedBook.url,
+// 			title: selectedBook.title,
+// 			author: selectedBook.author,
+// 			genre: selectedBook.genre,
+// 			isbn: selectedBook.isbn,
+// 			description: selectedBook.description,
+// 			googleId: selectedBook.id,
+// 			uid: $rootScope.user.uid
+// 		};
+// 		singleBook.id = BookWishId;
+// 		$scope.bookWishChoice = singleBook;
+// 	});
 
-	$scope.submitNewBookWish = function(){
-		// $scope.newBook.uid = $rootScope.user.uid;
-		WishFactory.postWishlistFB($scope.newBook).then(function(bookId){
-			$location.url("/bookcase/wishlist");
-			$scope.newBook = {};
-		});
-	};
+// 	$scope.submitNewBookWish = function(){
+// 		// $scope.newBook.uid = $rootScope.user.uid;
+// 		WishFactory.postWishlistFB($scope.newBook).then(function(bookId){
+// 			$location.url("/bookcase/wishlist");
+// 			$scope.newBook = {};
+// 		});
+// 	};
 	
-});	
+// });	
 
 // image: newBook.url,
 // title: newBook.title,
