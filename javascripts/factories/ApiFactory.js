@@ -2,7 +2,7 @@
 
 let BookApiKeys = {};
 
-bookcase.factory("ApiFactory", function($q, $http, FIREBASE_CONFIG, GOOGLE_APIKEY, BookFactory){
+bookcase.factory("ApiFactory", function($q, $http, FIREBASE_CONFIG, GOOGLE_APIKEY, BookFactory, WishFactory){
 
 	let booksFromAPI = (searchBook)=>{
 		return $q((resolve, reject)=>{

@@ -2,6 +2,7 @@
 
 bookcase.controller("AuthCtrl", function($scope, $location, $rootScope, AuthFactory, UserFactory){
 
+	$rootScope.user = false;
 	$scope.showSignIn = true; //ng-show="showSignIn" in auth.html
 	$scope.showRegistration = false; //ng-show"showRegistration" in auth.html
 	$scope.signIn = {

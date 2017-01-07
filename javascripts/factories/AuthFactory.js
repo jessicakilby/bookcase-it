@@ -2,7 +2,7 @@
 
 bookcase.factory("AuthFactory", function($q, $http, $rootScope, FIREBASE_CONFIG){
 
-	let currentUserData = null;
+	var currentUserData = null;
 	let isAuthenticated = function(){
 		return firebase.auth().currentUser ? true : false;
 	};

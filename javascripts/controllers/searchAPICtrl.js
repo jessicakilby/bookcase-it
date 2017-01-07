@@ -1,6 +1,6 @@
 "use strict";
 
-bookcase.controller("searchAPICtrl", function($scope, $rootScope, $location, BookFactory, ApiFactory){
+bookcase.controller("searchAPICtrl", function($scope, $rootScope, $location, BookFactory, ApiFactory, WishFactory){
 
 	$scope.inputForSearch = '';
 	$scope.searchResults = [];

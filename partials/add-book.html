@@ -1,4 +1,4 @@
-<h3 class="HomeTitle">Add Book to Bookcase</h3>
+<h3 class="HomeTitle">Add Book to Bookcase OR Wishlist</h3>
 
 <div class="row">
 	<form class="col s12">
@@ -19,6 +19,9 @@
 			<div class="input-field col s12">
 				<p for="isbn">description: {{newBook.description}}</p>
 			</div>
+			<!-- <div class="input-field col s12">
+				<p for="isbn">googleId: {{newBook.id}}</p>
+			</div> -->
 			<!-- <div class="input-field col s12">
 				<input id="worth" type="text" ng-model="newBook.worth">
 				<label for="worth">Worth</label>
@@ -44,7 +47,8 @@
 			</div>
 
 		</div>
-			<button type="submit" class="btn btn-success" id="submit-contact" ng-click="submitNewBook()">Submit New Book</button>
+			<button type="submit" class="btn btn-success" id="submit-contact" ng-click="submitNewBook()">BOOKCASE</button>
+			<button type="submit" class="btn btn-success" id="submit-contact" ng-click="submitNewBookWish()">Wishlist</button>
 	</form>
 </div>
 

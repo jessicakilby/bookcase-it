@@ -6,6 +6,7 @@ bookcase.controller("BookEditCtrl", function($scope, $routeParams, $location, Bo
 	let bookId = $routeParams.id;
 
 	BookFactory.getSingleBook(bookId).then(function(singleBook){
+		console.log("bookId BookEditCtrl", bookId);
 		singleBook.id = bookId;
 		$scope.newBook = singleBook;
 	});
